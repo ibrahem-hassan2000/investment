@@ -75,7 +75,7 @@ navigaton('/')
             onChange={(e) => setCertification(e.target.value)}
           />
         </div>
-        <Button onClick={()=>{Title.length&certification.length&custodianDetails.length&otherInformation.length?AddItem():alert("enter all data");}} color="indigo" size="md" className='!bg-indigo-500 bg-slate-400 mx-auto block mt-6' uppercase>
+        <Button onClick={()=>{Title.length!==0&certification.length!==0&custodianDetails.length!==0&otherInformation.length!==0?AddItem():alert("Enter all data");}} color="indigo" size="md" className='!bg-indigo-500 bg-slate-400 mx-auto block mt-6' uppercase>
      Add Item
     </Button>
       </form>
